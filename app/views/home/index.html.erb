@@ -1,0 +1,9 @@
+<h1>Task 1</h1>
+<h2> Request's staff by Ruby:</h2>
+  <% @request_data.each do | key, data |%>
+  <ul><%= data[1] %> : "<%= data[0] %>" </ul>
+<% end %>
+<h2>HTTP request's headers and their values:</h2>
+  <% @request_headers.each do | key, value |%>
+  <ul><%= key %> = "<%= value %>" </ul>
+<% end %>
